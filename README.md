@@ -1,1 +1,2 @@
-Magica will be back over the summer.
+![Magica Logo](http://i.imgur.com/ASEfV.png)
+## Magica will be back in the summer, or sometime very soon.
