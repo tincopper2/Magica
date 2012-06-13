@@ -1,0 +1,1 @@
+Magica will be back over the summer.

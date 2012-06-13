@@ -1,0 +1,8 @@
+name: Magica
+version: 0.1
+description: Simple and awesome magic for Bukkit.
+website: https://github.com/Gratimax/Magica
+
+main: net.mdcreator.magica.Magica
+database: false
+depend: []                                   go
