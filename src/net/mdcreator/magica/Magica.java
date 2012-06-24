@@ -1,6 +1,6 @@
 package net.mdcreator.magica;
 
-import net.mdcreator.magica.listen.PlayerListener;
+import net.mdcreator.magica.evt.PlayerListener;
 import org.bukkit.Material;
 import org.bukkit.Server;
 import org.bukkit.enchantments.Enchantment;

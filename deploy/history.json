@@ -1,0 +1,13 @@
+[
+    {
+        "version": 0.2,
+        "changelog": {
+                "new": [
+                    "First version",
+                    "First coding"
+                ],
+                "fix": [
+                ],
+            }
+    },
+]

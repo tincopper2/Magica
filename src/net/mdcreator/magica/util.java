@@ -7,9 +7,9 @@ import java.io.OutputStream;
 
 public class util {
 
-    public void copyFile(String from, File to){
+    public static void copyFile(String from, File to){
         try {
-            InputStream in = getClass().getResourceAsStream(from);
+            InputStream in = util.class.getResourceAsStream(from);
             OutputStream out = new FileOutputStream(to);
             byte[] buf = new byte[1024];
             int len;

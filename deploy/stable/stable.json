@@ -1,0 +1,12 @@
+{
+    "name": "Magica",
+    "version": 0.2,
+    "changelog": {
+        "new": [
+            "First version",
+            "Entire recode"
+        ],
+        "fix": [
+        ],
+    }
+}
