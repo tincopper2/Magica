@@ -1,0 +1,11 @@
+{
+	"name": "Magica",
+	"author": "MDCreator",
+	"description": "An awesome Magic plugin for bukkit.",
+
+	"paths": {
+		"history": "history.json",
+		"stable": "stable.jar",
+		"unstable": "unstable.jar"
+	}
+}
