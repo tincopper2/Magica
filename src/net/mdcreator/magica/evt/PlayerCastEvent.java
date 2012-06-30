@@ -1,6 +1,6 @@
 package net.mdcreator.magica.evt;
 
-import net.mdcreator.magica.spell.SpellType;
+import net.mdcreator.magica.spell.Spell;
 import org.bukkit.entity.Player;
 import org.bukkit.event.Event;
 import org.bukkit.event.HandlerList;
@@ -10,20 +10,20 @@ public class PlayerCastEvent extends Event {
     private static final HandlerList handlers = new HandlerList();
 
     private Player player;
-    private SpellType spellType;
+    private Spell spell;
     private boolean isCancelled = true;
 
-    public PlayerCastEvent(Player player, SpellType spellType){
+    public PlayerCastEvent(Player player, Spell Spell){
         this.player = player;
-        this.spellType = spellType;
+        this.spell = Spell;
     }
 
     public Player getPlayer(){
         return player;
     }
 
-    public SpellType getSpellType(){
-        return spellType;
+    public Spell getSpell(){
+        return spell;
     }
 
     public boolean isCancelled(){
