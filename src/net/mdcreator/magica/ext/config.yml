@@ -1,0 +1,5 @@
+#Type of permissions system that Magica uses
+#op: allow spells and book to ops
+#all: allow spells and book to everyone
+#perm: allow spells and book to people with magica.use(only with SuperPerms
+perms: op

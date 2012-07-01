@@ -6,3 +6,17 @@ website: https://github.com/Gratimax/Magica
 main: net.mdcreator.magica.Magica
 database: false
 depend: []
+
+permissions:
+    magica:
+        description: Allows for all Magica things
+        default: op
+        children:
+            magica.use: true
+            magica.com: true
+    magica.use:
+        description: Allows you to use the wand and book
+        default: op
+        children:
+            magica.use.wand: true
+            magica.use.book: true

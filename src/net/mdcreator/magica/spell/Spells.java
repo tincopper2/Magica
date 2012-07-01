@@ -38,7 +38,9 @@ public class Spells {
     private void addSpells(){
         spells = new Spell[]{
                 new SpellNothing(),
-                new SpellFireball()
+                new SpellFireball(),
+                new SpellFire(),
+                new SpellTime(),
         };
     }
 }

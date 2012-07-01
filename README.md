@@ -8,4 +8,6 @@ With a fresh mind, I have decided to do a full recode: deleting the repo(probabl
 
 I am also programming an auto-update plugin(CubUpdate) to make updating Magica significantly easier(you can even set it to update itself, automatically!). Eventually, I have a _grand_ plan for all plugins, but that comes later.
 
+If you want, download the latest _unstable_ version [here](https://github.com/Gratimax/Magica/raw/master/deploy/unstable.jar).
+
 I plan on finishing the recode by the end of July. More details on that soon!

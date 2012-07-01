@@ -17,7 +17,6 @@ public class Magica extends JavaPlugin {
 
     public void onEnable(){
         server = getServer();
-
         spells = new Spells(this);
         playerListener = new PlayerListener(this);
     }

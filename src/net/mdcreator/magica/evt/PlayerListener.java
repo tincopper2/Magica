@@ -28,7 +28,9 @@ public class PlayerListener implements Listener {
         Spell spell = Spells.getSpellByCastName(event.getMessage().toLowerCase());
         if(spell!=null){
             event.getPlayer().setMetadata("spell", new FixedMetadataValue(plugin , spell.name));
-            event.setFormat(ChatColor.BLUE + event.getPlayer().getName() + ChatColor.GRAY + ": " + ChatColor.DARK_PURPLE + spell.asCapital());
+            event.setFormat(ChatColor.DARK_GRAY + "<" +
+                    ChatColor.BLUE + event.getPlayer().getName() + ChatColor.DARK_GRAY +
+                    "> " + ChatColor.DARK_PURPLE + spell.asCapital());
         }
     }
 
