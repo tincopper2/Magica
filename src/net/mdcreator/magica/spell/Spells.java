@@ -1,15 +1,10 @@
 package net.mdcreator.magica.spell;
 
-import net.mdcreator.magica.Magica;
-
 public class Spells {
-
-    private final Magica plugin;
 
     public static Spell[] spells;
 
-    public Spells(Magica plugin) {
-        this.plugin = plugin;
+    public Spells() {
         addSpells();
     }
 
@@ -41,6 +36,8 @@ public class Spells {
                 new SpellFireball(),
                 new SpellFire(),
                 new SpellTime(),
+                new SpellHeal(),
+                new SpellRegen(),
         };
     }
 }

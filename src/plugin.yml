@@ -7,6 +7,18 @@ main: net.mdcreator.magica.Magica
 database: false
 depend: []
 
+commands:
+    magica:
+        description: The Magica base command
+        aliases: [magic, ma, magical]
+        usage: |
+            §8[§5Magica§8]§7 /<command> usage
+            §d-§5 /<command>§8\§9display info about Magica
+            §d-§5 /<command> §7help§8\§9show this menu
+            §d-§5 /<command> §7stable§8\§9get the latest stable
+            §d-§5 /<command> §7unstable§8\§9get the latest unstable
+            §d-§5 /<command> §7history§8\§9show version history
+
 permissions:
     magica:
         description: Allows for all Magica things
@@ -14,9 +26,18 @@ permissions:
         children:
             magica.use: true
             magica.com: true
+    magica.com:
+        description: Allows usage of /magica command
+        default: op
     magica.use:
         description: Allows you to use the wand and book
         default: op
         children:
             magica.use.wand: true
             magica.use.book: true
+    magica.use.wand:
+        description: Allows you to use the wand
+        default: op
+    magica.use.book:
+        description: Allows you to use the book
+        default: op
