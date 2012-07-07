@@ -6,4 +6,4 @@ Magica is _mostly_ back in business! I've started adding spells again, and am re
 
 Magica is a simple, awesome Magic plugin for Bukkit. Right click with a book in hand to view all the spells. Say the casting name(in purple) to select a spell, and left click with a wand to cast it.
 
-If you want, download the latest unstable version [here](https://github.com/Gratimax/Magica/raw/master/deploy/unstable.jar). These features are not documented, however, they are mostly new spells.
+__Download Magica from the BukkitDev link above.__
