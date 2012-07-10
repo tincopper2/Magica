@@ -27,9 +27,10 @@ public class PlayerListener implements Listener {
     public void onPlayerChat(PlayerChatEvent event){
         Spell spell = Spells.getSpellByCastName(event.getMessage().toLowerCase());
         if(spell!=null){
+            if(!plugin.playerHas(event.getPlayer(), "magica.use.select")) return;
             event.getPlayer().setMetadata("spell", new FixedMetadataValue(plugin , spell.name));
             event.setFormat(ChatColor.DARK_GRAY + "<" +
-                    ChatColor.BLUE + event.getPlayer().getName() + ChatColor.DARK_GRAY +
+                    ChatColor.BLUE + event.getPlayer().getDisplayName() + ChatColor.DARK_GRAY +
                     "> " + ChatColor.DARK_PURPLE + spell.asCapital());
         }
     }
@@ -38,6 +39,7 @@ public class PlayerListener implements Listener {
     public void onPlayerInteract(PlayerInteractEvent event){
         if((event.getAction()==Action.LEFT_CLICK_AIR||event.getAction()==Action.LEFT_CLICK_BLOCK)
                 &&event.hasItem()&&event.getItem().getType()==Material.STICK){
+            if(!plugin.playerHas(event.getPlayer(), "magica.use.wand")) return;
             Player player = event.getPlayer();
             if(event.getPlayer().hasMetadata("spell")){
                 Spell spell = Spells.getSpellByName(player.getMetadata("spell").get(0).asString());
@@ -45,6 +47,7 @@ public class PlayerListener implements Listener {
             }
         } else if((event.getAction()==Action.RIGHT_CLICK_AIR||event.getAction()==Action.RIGHT_CLICK_BLOCK)
                 &&event.hasItem()&&event.getItem().getType()==Material.BOOK){
+            if(!plugin.playerHas(event.getPlayer(), "magica.use.book")) return;
             Player player = event.getPlayer();
             player.sendMessage(title + "Spells List");
             for(Spell s: Spells.spells){

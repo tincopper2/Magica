@@ -1,7 +1,8 @@
 name: Magica
 version: 0.02
+author: MDCreator
 description: Simple and awesome magic for Bukkit.
-website: https://github.com/Gratimax/Magica
+website: http://dev.bukkit.org/server-mods/magica/
 
 main: net.mdcreator.magica.Magica
 database: false
@@ -15,9 +16,8 @@ commands:
             §8[§5Magica§8]§7 /<command> usage
             §d-§5 /<command>§8\§9display info about Magica
             §d-§5 /<command> §7help§8\§9show this menu
-            §d-§5 /<command> §7stable§8\§9get the latest stable
-            §d-§5 /<command> §7unstable§8\§9get the latest unstable
-            §d-§5 /<command> §7history§8\§9show version history
+            §d-§5 /<command> §7latest§8\§9show the latest online release
+            §d-§5 /<command> §7update§8\§9update Magica to the latest release
 
 permissions:
     magica:
@@ -34,9 +34,13 @@ permissions:
         default: op
         children:
             magica.use.wand: true
+            magica.use.select: true
             magica.use.book: true
     magica.use.wand:
         description: Allows you to use the wand
+        default: op
+    magica.use.select:
+        description: Allows you to select spells
         default: op
     magica.use.book:
         description: Allows you to use the book
