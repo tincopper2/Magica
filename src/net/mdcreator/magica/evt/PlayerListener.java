@@ -5,10 +5,12 @@ import net.mdcreator.magica.spell.Spell;
 import net.mdcreator.magica.spell.Spells;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
+import org.bukkit.event.entity.EntityExplodeEvent;
 import org.bukkit.event.player.PlayerChatEvent;
 import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.metadata.FixedMetadataValue;
@@ -53,6 +55,16 @@ public class PlayerListener implements Listener {
             for(Spell s: Spells.spells){
                 player.sendMessage(s.asFormattedString());
             }
+        }
+    }
+
+    @EventHandler
+    public void onEntityExplode(EntityExplodeEvent event){
+        Entity entity = event.getEntity();
+        if(entity==null) return;
+        if(entity.hasMetadata("playerSpawned")){
+            event.setCancelled(true);
+            entity.getWorld().createExplosion(entity.getLocation(), 0.0f);
         }
     }
 }
