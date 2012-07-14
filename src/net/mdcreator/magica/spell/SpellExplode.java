@@ -9,15 +9,7 @@ public class SpellExplode extends Spell{
     public SpellExplode(){
         name = "Explode";
         castName = "recio";
-<<<<<<< HEAD
-<<<<<<< HEAD
-        description = "Explodes(only damages) at the pointer";
-=======
-        description = "Explosion, and Lightning intertwined!";
->>>>>>> e26449d... Change spells
-=======
-        description = "Explosion, and Lightning intertwined!";
->>>>>>> 06b0777a4bf49bfa98e7a16cd5bee11737d821f8
+        description = "Explodes at the pointer";
     }
 
     public void effects(Player caster) {
