@@ -4,6 +4,7 @@ import net.mdcreator.magica.evt.PlayerListener;
 import net.mdcreator.magica.spell.Spells;
 import net.mdcreator.magica.util.BaseUtil;
 import net.mdcreator.magica.util.FetchUtil;
+import org.bukkit.Location;
 import org.bukkit.Server;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -47,7 +48,6 @@ public class Magica extends JavaPlugin {
 
         checkFiles();
         config = getConfig();
-        permSetting = config.getString("perms");
     }
 
     public void checkFiles(){
