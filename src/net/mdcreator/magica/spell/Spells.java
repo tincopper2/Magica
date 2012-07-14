@@ -38,7 +38,7 @@ public class Spells {
                 new SpellTime(),
                 new SpellHeal(),
                 new SpellRegen(),
-                new SpellExplode(),
+                new SpellExplode()
         };
     }
 }
